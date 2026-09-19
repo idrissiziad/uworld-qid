@@ -8,8 +8,8 @@ DEFAULT_BLOCK_SIZE = 40
 # ---------------- SUPABASE SETUP ----------------
 @st.cache_resource
 def init_supabase() -> Client:
-    url = st.secrets["SUPABASE_URL"]
-    key = st.secrets["SUPABASE_KEY"]
+    url = st.secrets["https://lukcwwvchxjjjlnquvyw.supabase.co"]
+    key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx1a2N3d3ZjaHhqampsbnF1dnl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk4MzA3MTYsImV4cCI6MjEwNTQwNjcxNn0.NzULUOYIBmbWrOzYa3_ceOJlSPUxkWJUPHRl05BPld0"]
     return create_client(url, key)
 
 supabase = init_supabase()
