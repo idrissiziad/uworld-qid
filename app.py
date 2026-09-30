@@ -1,7 +1,7 @@
 import streamlit as st
 from supabase import create_client, Client
 
-BLOCK_SIZE = 40
+BLOCK_SIZE = 10
 
 # ---------------- SUPABASE CLIENT ----------------
 @st.cache_resource
